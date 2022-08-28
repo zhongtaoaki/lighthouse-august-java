@@ -6,6 +6,6 @@
 - [任](https://wenjinfharuki.github.io/wenjing/)
 - [李](https://chengyinglee.github.io/my-blog/)
 - [赵](https://zhaoyunhe0720.github.io/blog/)
-- [宋]()
+- [宋](https://ssoka1999.github.io/8.28/)
 - [谢]()
-- [蔡]()
+- [蔡](https://github.com/manhinreal/lighthouse-August-java)
