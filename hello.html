@@ -3,13 +3,52 @@
 
 <head>
     <title>Hello</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        #second-p {
+            color: #bb85e9;
+            background-color: rgb(164, 237, 233);
+            text-align: center;
+            font-family: 'Qwitcher Grypen', cursive;
+            font-size: 30px;
+            height: 80px;
+            width: 50%;
+        }
+
+        /* 这是对第一个p和最后一个p生效的红色css */
+        #first-p,
+        #last-p {
+            color: red;
+            font-size: 20px;
+        }
+        span{
+            color: #bb85e9;
+        }
+        body{
+            background-image: url(backgroud.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            /* background: no-repeat cover url(backgroud.jpg); */
+        }
+    </style>
 </head>
 
 <body>
-
-    <p>
-        welcome to my hello html
+    <p id="first-p" class="red">
+        welcome to my <span>hello</span> html
     </p>
+
+    <p id="second-p">
+        this another p
+    </p>
+
+    <p id="last-p" class="red">
+        this the last p 
+    </p>
+    <span class="material-icons">face</span>
 </body>
 
 </html>
