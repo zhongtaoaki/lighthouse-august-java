@@ -21,5 +21,14 @@ public class ForeachDemo {
         System.out.println(total);
 
         int[][] array2 = { { 2, 5, 1 }, { 78, 10, 20 }, { 2, 34 } };
+    
+        for(int[] is : array2){
+            for (int i : is) {
+                System.out.println(i);
+                if (i == 10) {
+                    break;
+                }
+            }
+        }
     }
 }
