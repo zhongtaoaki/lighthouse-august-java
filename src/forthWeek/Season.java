@@ -40,7 +40,7 @@ class Test {
     public static void main(String[] args) {
 
         Season spring = Season.SPRING;
-        System.out.println(spring.name);
+        System.out.println(spring.getName());
 
         Season[] seasons = {Season.SPRING, Season.SUMMER, Season.WINTER};
 
