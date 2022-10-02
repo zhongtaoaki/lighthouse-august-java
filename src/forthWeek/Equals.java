@@ -22,8 +22,13 @@ public class Equals {
         System.out.println(student1 == student2);
         System.out.println(student1.equals(student2));
 
-        System.out.println(student1.name.equals(student2.name));
+        System.out.println(student1.name.equals(student2.name));// 比较String的标准方案
         System.out.println(student1.name == student2.name);
+
+        
+        String s1 = "Hello";
+        String s2 = new String("Hello");
+        System.out.println(s1 == s2);
 
     }
 }
