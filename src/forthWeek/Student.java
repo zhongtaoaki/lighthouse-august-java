@@ -10,7 +10,7 @@ package forthWeek;
  * 第二种用法：代指这个类的父类的构造器（当在一个构造器里去调用另一个构造器的时候，这个this只能出现在第一行）
  * 
  */
-public class Student extends Object{
+public class Student extends Object {
 
     public String name;
     public int score;
@@ -21,7 +21,7 @@ public class Student extends Object{
     }
 
     public Student(String name) {
-        super(); 
+        super();
         this.name = name;
     }
 
@@ -32,24 +32,26 @@ public class Student extends Object{
 
     public Student(String name, int score, int number) {
         this(name, number);
-        //super.name = name;
+        // super.name = name;
         this.score = score;
     }
 
     @Override
     public boolean equals(Object obj) {
 
-        Student student = (Student)obj;
+        Student student = (Student) obj;
         // if (this.number == student.number) {
-        //     return true;
+        // return true;
         // }else{
-        //     return false;
+        // return false;
         // }
-        return this.number == student.number;
+        return (this.number == student.number) &&
+                (this.name == student.name) &&
+                (this.score == student.score);
     }
 
 }
 
-class People{
+class People {
 
 }
