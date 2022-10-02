@@ -23,10 +23,12 @@ public enum Season {
     // public final static Season AUTUMN = new Season("秋天");
     // public final static Season WINTER = new Season("冬天");
 
+    // 构造器
     Season(String name) {
         this.name = name;
     }
 
+    // getter 获取器
     public String getName() {
         return this.name;
     }
@@ -38,8 +40,11 @@ class Test {
     public static void main(String[] args) {
 
         Season spring = Season.SPRING;
-        System.out.println(spring.getName());
+        System.out.println(spring.name);
+
+        Season[] seasons = {Season.SPRING, Season.SUMMER, Season.WINTER};
 
     }
+
 
 }
