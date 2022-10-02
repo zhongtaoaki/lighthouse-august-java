@@ -17,10 +17,13 @@ public class Equals {
         System.out.println(number1 == number2);
 
         Student student1 = new Student("satou", 80, 20);
-        Student student2 = new Student("suzuki", 80, 20);
+        Student student2 = new Student("satou", 80, 20);
 
         System.out.println(student1 == student2);
         System.out.println(student1.equals(student2));
+
+        System.out.println(student1.name.equals(student2.name));
+        System.out.println(student1.name == student2.name);
 
     }
 }
