@@ -36,9 +36,16 @@ public class Student extends Object{
         this.score = score;
     }
 
-    public static void main(String[] args) {
-        Student student1 = new Student("satou");
-        Student student2 = new Student("satou", 90);
+    @Override
+    public boolean equals(Object obj) {
+
+        Student student = (Student)obj;
+        // if (this.number == student.number) {
+        //     return true;
+        // }else{
+        //     return false;
+        // }
+        return this.number == student.number;
     }
 
 }
