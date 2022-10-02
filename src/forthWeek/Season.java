@@ -1,5 +1,7 @@
 package forthWeek;
 
+import java.util.Random;
+
 /**
  * 
  * 季节
@@ -43,6 +45,9 @@ class Test {
         System.out.println(spring.getName());
 
         Season[] seasons = {Season.SPRING, Season.SUMMER, Season.WINTER};
+
+        Random random = new Random();
+        int result = random.nextInt(3);// 0,1,2
 
     }
 
