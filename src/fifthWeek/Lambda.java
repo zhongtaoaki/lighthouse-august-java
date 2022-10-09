@@ -34,7 +34,12 @@ public class Lambda {
         // 3.把这个实例传给该方法
         // lambda表达式，箭头函数 把方法作为入参传给另一个方法
         list.forEach(t -> System.out.println(t));
-
+        list.forEach(integer -> {
+            if (integer % 2 == 0) { // 把偶数打印出来
+                System.out.println(integer);   
+            }
+        });
+        
     }
 }
 
