@@ -39,6 +39,11 @@ public class Lambda {
                 System.out.println(integer);   
             }
         });
+
+        //当lambda里的方法体只有一行，且是在调用另一个函数时
+        //如果该函数的入参与返回值规则和该抽象方法一致
+        //可以函数的调用  【方法的主体::方法名】
+        list.forEach(System.out::println);
         
     }
 }
