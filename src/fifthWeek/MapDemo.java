@@ -31,7 +31,7 @@ public class MapDemo {
             System.out.println(key + ": " + map.get(key));
         }
 
-        // 用foreach循环map本身
+        // 用foreach循环map本身,键值对（映射）
         for (Entry<String, String> entry : map.entrySet()) {
             System.out.println(entry.getKey() + ": " + entry.getValue());
         }
