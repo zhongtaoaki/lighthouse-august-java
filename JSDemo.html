@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            JS Hello World
+        </title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </head>
+    <body>
+
+        <p id="p1">Hello</p>
+
+        <a id="a1" href="https://www.bilibili.com">google</a>
+
+        <button id="button1">click me</button>
+        <button id="myButton">click me</button>
+        
+        <p id="p"></p>
+        <script>
+            $(()=>{
+                $("#button1").click(() =>{
+                    $("#p1").css("color", "pink");
+                });
+
+                $("#myButton").click(function () {
+                    $.get("https://petstore.swagger.io/v2/pet/findByStatus?status=available", function (pets) {
+
+                        var content;
+                        content += "pet数量: " + pets.length;
+                        for (let index = 0; index < 10; index++) {
+                            content += "<br>" + pets[index].name + " " + pets[index].id;
+                        }
+                        $("#p").html(content);
+
+                    });
+                });
+            });
+        </script>
+    </body>
+</html>
